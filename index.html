@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tommy Tech</title>
+
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+    
+    <!-- START HEADER -->
+    <header>
+        <a href="#home" class="logo">
+            <img src="assets/techGreat2.png" alt="Logomarca Tommy Tech">
+        </a>    
+
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#categorias">Categorias</a></li>
+            <li><a href="#courses">Cursos</a></li>
+            <li><a href="#about">Sobre nós</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+
+        <div class="header-icons">
+            <a href="login/login.html"><i class='bx bx-user'></i></a>
+            <a href="#"><i class='bx bxl-youtube'></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <!-- START HOME SECTION -->
+
+    <section class="home" id="home">
+        <div class="home-text">
+            <h6>A melhor plataforma de aprendizado</h6>
+            <h1>Aprenda com diversão</h1>
+            <p>Acesso aos cursos gratuitamente</p>
+            <div class="latter">
+                <form id="myForm" action="login/login.html">
+                    <input type="email" id="emailInput" placeholder="Escreva seu email" required>
+                    
+                    <input type="submit" value="Vamos começar" onclick="submitFormAndRedirect();">
+                </form>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <img src="assets/3d-3d-online-webinar-illustration-png.png" alt="Imagem ensino a distância">
+        </div>
+    </section>
+
+    <!-- START CONTEINER SECTION -->
+
+    <section class="conteiner">
+        <div class="conteiner-box">
+            <div class="conteiner-img">
+                <img src="assets/con1.png" alt="" width="50vw">
+            </div>
+            <div class="conteiner-text">
+                <h4>Estudantes</h4>
+                <p>mais de 5000 alunos</p>
+            </div>
+        </div>
+
+        <div class="conteiner-box">
+            <div class="conteiner-img">
+                <img src="assets/con2.png" alt="" width="50vw">
+            </div>
+            <div class="conteiner-text">
+                <h4>Certificados</h4>
+                <p>Todos cursos possuem certificado</p>
+            </div>
+        </div>
+
+        <div class="conteiner-box">
+            <div class="conteiner-img">
+                <img src="assets/con3.png" alt="" width="50vw">
+            </div>
+            <div class="conteiner-text">
+                <h4>Bata suas metas</h4>
+                <p>Crie metas diárias</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- START CATEGORIES SECTION -->
+    <section class="categories" id="categorias">
+        <div class="center-text">
+            <h5>CATEGORIAS</h5>
+            <h2>Categorias populares</h2>
+        </div>
+
+        <div class="categories-content">
+            <div class="box">
+                <img src="assets/cat1.png" alt="Categorias">
+                <h3>HTML E CSS</h3>
+                <p>4 cursos</p>
+            </div>
+
+            <div class="box">
+                <img src="assets/cat2.png" alt="Categorias">
+                <h3>Angular</h3>
+                <p>2 cursos</p>
+            </div>
+
+            <div class="box">
+                <img src="assets/cat3.png" alt="Categorias">
+                <h3>Java</h3>
+                <p>5 cursos</p>
+            </div>
+
+            <div class="box">
+                <img src="assets/cat4.png" alt="Categorias">
+                <h3>React</h3>
+                <p>3 cursos</p>
+            </div>
+        </div>
+
+        <div class="main-btn">
+            <a href="login/login.html" class="btn">Todas categorias</a>
+        </div>
+    </section>
+
+    <!-- START COURSES SECTION -->
+    <section class="courses" id="courses">
+        <div class="center-text">
+            <h5>CURSOS</h5>
+            <h2>Explore os cursos populares</h2>
+        </div>
+
+        <div class="courses-content">
+            <div onclick="window.location.href='login/login.html';" class="row">
+                <img src="assets/curso1.png" alt="imagem do curso de html e css">
+                <div class="courses-text">
+                    <h5>Gratuito</h5>
+                    <h3>Curso de HTML e CSS completo</h3>
+                    <h6>Carga horária de 20h</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                        </div>
+                        <div class="review">
+                            <p>{227 Avaliações}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='login/login.html';" class="row">
+                <img src="assets/curso2.png" alt="imagem do curso de Lógica de programação">
+                <div class="courses-text">
+                    <h5>Gratuito</h5>
+                    <h3>Lógica de programação</h3>
+                    <h6>Carga horária de 40h</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                        </div>
+                        <div class="review">
+                            <p>{400 Avaliações}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='login/login.html';" class="row">
+                <img src="assets/curso3.png" alt="imagem do curso de PHP básico">
+                <div class="courses-text">
+                    <h5>Gratuito</h5>
+                    <h3>PHP Básico</h3>
+                    <h6>Carga horária de 20h</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                        </div>
+                        <div class="review">
+                            <p>{112 Avaliações}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='login/login.html';" class="row">
+                <img src="assets/curso4.png" alt="imagem do curso de Arquitetura de computadores">
+                <div class="courses-text">
+                    <h5>Gratuito</h5>
+                    <h3>Arquitetura de computadores</h3>
+                    <h6>Carga horária de 30h</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                        </div>
+                        <div class="review">
+                            <p>{275 Avaliações}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='login/login.html';" class="row">
+                <img src="assets/curso5.png" alt="imagem do curso de Informática básica">
+                <div class="courses-text">
+                    <h5>Gratuito</h5>
+                    <h3>Informática básica</h3>
+                    <h6>Carga horária de 20h</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                        </div>
+                        <div class="review">
+                            <p>{98 Avaliações}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='login/login.html';" class="row">
+                <img src="assets/curso6.png" alt="imagem do curso de javascript básico">
+                <div class="courses-text">
+                    <h5>Gratuito</h5>
+                    <h3>JavaScript básico</h3>
+                    <h6>Carga horária de 20h</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                        </div>
+                        <div class="review">
+                            <p>{1276 Avaliações}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="main-btn">
+            <a href="login/login.html" class="btn">Todos os cursos</a>
+        </div>
+    </section>
+
+    <!-- START CTA SECTION -->
+
+    <section class="cta">
+        <div class="center-text">
+            <h5>Patrocinado por</h5>
+            <h2>+500 universidades e empresas</h2>
+        </div>
+
+        <div class="cta-content">
+
+            <div class="cta-img">
+                <img src="assets/cta1.png" alt="logomarca Unigoiás">
+            </div>
+
+            <div class="cta-img">
+                <img src="assets/cta2.png" alt="logomarca UFG">
+            </div>
+
+            <div class="cta-img">
+                <img src="assets/cta3.png" alt="logomarca governo de goiás">
+            </div>
+
+            <div class="cta-img">
+                <img src="assets/cta4.png" alt="logomarca curso em vídeo">
+            </div>
+
+            <div class="cta-img">
+                <img src="assets/cta5.png" alt="logomarca Google">
+            </div>
+
+            <div class="cta-img">
+                <img src="assets/cta6.png" alt="logomarca Unigoiás">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- START ABOUT SECTION -->
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="assets/about.png" alt="Imagem sobre nós">
+        </div>
+
+        <div class="about-text">
+            <h2>Saiba mais sobre <br> a Tommy Tech</h2>
+            <p>Tommy Tech é uma empresa de eLearning que está moldando o futuro da educação em tecnologia. Com seu compromisso com a qualidade, acessibilidade e inovação, eles estão capacitando indivíduos e empresas a prosperar no mundo tecnológico em constante mudança. Se você está buscando uma maneira eficaz de adquirir habilidades tecnológicas ou aprimorar seu conhecimento existente, a Tommy Tech é a parceira educacional ideal.</p>
+            <h4>Os melhores cursos</h4>
+            <h5>Instrutores bem avaliados</h5>
+            <a href="login/login.html" class="btn">Saiba mais</a>
+        </div>
+    </section>
+
+    <!-- START CONTACT SECTION -->
+
+    <section class="contact" id="contact">
+        <div class="main-contact">
+            <div class="contact-content">
+                <img src="assets/techGreat2.png" alt="Logomarca Tommy Tech">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </div>
+
+            <div class="contact-content">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categorias">Categorias</a></li>
+                <li><a href="#courses">Cursos</a></li>
+                <li><a href="#about">Sobre nós</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </div>
+
+            <div class="contact-content">
+                <li><a href="#home">Perfil</a></li>
+                <li><a href="login/login.html">Login</a></li>
+                <li><a href="login/login.html#">Cadastro</a></li>
+                <li><a href="#">Instrutor</a></li>
+                <li><a href="#">Dashboard</a></li>
+            </div>
+
+            <div class="contact-content">
+                <li><a href="#">Goiânia,<br> Brasil, CA 94108 </a></li>
+                <li><a href="#">tommytech798@gmail.com</a></li>
+                <li><a href="#">(62) 98672-0928</a></li>
+            </div>
+            
+        </div>
+    </section>
+
+    <div class="last-text">
+        <p>© 2023 Igor Jaime. Todos direitos reservados.</p>
+    </div>
+
+    <!-- CUSTOM JS LINKS -->
+    <script type="text/javascript" src="js/script.js"></script>
+
+
+</body>
+</html>

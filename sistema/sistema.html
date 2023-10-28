@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tommy Tech</title>
+
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="sistema.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/28d256e67b.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<!--    
+    
+    <header>
+        <a href="#home" class="logo">
+            <img src="../assets/techGreat2.png" alt="Logomarca Tommy Tech">
+        </a>    
+
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#categorias">Categorias</a></li>
+            <li><a href="#courses">Cursos</a></li>
+            <li><a href="#about">Sobre nós</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+
+        <div class="header-icons">
+            <button onclick='sair()'>Sair</button>
+            <a href="#"><i class='bx bxl-youtube'></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+
+    
+    <section class="courses" id="courses">
+        <div class="center-text">
+            <h5>Seja bem-vindo(a)</h5>
+            <h2 id="logado"> </h2>
+        </div> 
+
+        <div class="courses-content">
+            <div onclick="window.location.href='../login/login.html';" class="row">
+                <img src="../assets/curso1.png" alt="imagem do curso de html e css">
+                <div class="courses-text">
+                    <h5>Gratuito</h5>
+                    <h3>Curso de HTML e CSS completo</h3>
+                    <h6>Carga horária de 20h</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                        </div>
+                        <div class="review">
+                            <p>{227 Avaliações}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='../login/login.html';" class="row">
+                <img src="../assets/curso2.png" alt="imagem do curso de Lógica de programação">
+                <div class="courses-text">
+                    <h5>Gratuito</h5>
+                    <h3>Lógica de programação</h3>
+                    <h6>Carga horária de 40h</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                        </div>
+                        <div class="review">
+                            <p>{400 Avaliações}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='../login/login.html';" class="row">
+                <img src="../assets/curso3.png" alt="imagem do curso de PHP básico">
+                <div class="courses-text">
+                    <h5>Gratuito</h5>
+                    <h3>PHP Básico</h3>
+                    <h6>Carga horária de 20h</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                        </div>
+                        <div class="review">
+                            <p>{112 Avaliações}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='../login/login.html';" class="row">
+                <img src="../assets/curso4.png" alt="imagem do curso de Arquitetura de computadores">
+                <div class="courses-text">
+                    <h5>Gratuito</h5>
+                    <h3>Arquitetura de computadores</h3>
+                    <h6>Carga horária de 30h</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                        </div>
+                        <div class="review">
+                            <p>{275 Avaliações}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='../login/login.html';" class="row">
+                <img src="../assets/curso5.png" alt="imagem do curso de Informática básica">
+                <div class="courses-text">
+                    <h5>Gratuito</h5>
+                    <h3>Informática básica</h3>
+                    <h6>Carga horária de 20h</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                        </div>
+                        <div class="review">
+                            <p>{98 Avaliações}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='../login/login.html';" class="row">
+                <img src="../assets/curso6.png" alt="imagem do curso de javascript básico">
+                <div class="courses-text">
+                    <h5>Gratuito</h5>
+                    <h3>JavaScript básico</h3>
+                    <h6>Carga horária de 20h</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                        </div>
+                        <div class="review">
+                            <p>{1276 Avaliações}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="main-btn">
+            <a href="../login/login.html" class="btn">Todos os cursos</a>
+        </div>
+    </section>
+    
+
+    <section class="contact" id="contact">
+        <div class="main-contact">
+            <div class="contact-content">
+                <img src="../assets/techGreat2.png" alt="Logomarca Tommy Tech">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </div>
+
+            <div class="contact-content">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categorias">Categorias</a></li>
+                <li><a href="#courses">Cursos</a></li>
+                <li><a href="#about">Sobre nós</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </div>
+
+            <div class="contact-content">
+                <li><a href="#home">Perfil</a></li>
+                <li><a href="login/login.html">Login</a></li>
+                <li><a href="login/login.html#">Cadastro</a></li>
+                <li><a href="#">Instrutor</a></li>
+                <li><a href="#">Dashboard</a></li>
+            </div>
+
+            <div class="contact-content">
+                <li><a href="#">Goiânia,<br> Brasil, CA 94108 </a></li>
+                <li><a href="#">tommytech798@gmail.com</a></li>
+                <li><a href="#">(62) 98672-0928</a></li>
+            </div>
+            
+        </div>
+    </section>
+
+    <div class="last-text">
+        <p>© 2023 Igor Jaime. Todos direitos reservados.</p>
+    </div> 
+-->
+
+
+    <!-- <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <img src="../assets/tommyWhite.png" alt="Logo tommy">
+            </div>
+            <i class="fa-solid fa-bars" id="btn"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                    <i class='bx bx-search-alt'></i>
+                    <input type="text" placeholder="Pesquisar...">
+                <span class="tooltip">Pesquisar</span>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="links_name">Usuário</span>
+                </a>
+                <span class="tooltip">Usuário</span>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span class="links_name">Cursos</span>
+                </a>
+                <span class="tooltip">Cursos</span>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                    <span class="links_name">Vídeos</span>
+                </a>
+                <span class="tooltip">Vídeos </span>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-book-open-reader"></i>
+                    <span class="links_name">Atividades</span>
+                </a>
+                <span class="tooltip">Atividades</span>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-folder-open"></i>
+                    <span class="links_name">Arquivos</span>
+                </a>
+                <span class="tooltip">Arquivos</span>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-certificate"></i>
+                    <span class="links_name">Certificados</span>
+                </a>
+                <span class="tooltip">Certificados</span>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-heart"></i>
+                    <span class="links_name">Favoritos</span>
+                </a>
+                <span class="tooltip">Favoritos</span>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <div class="name_job">
+                        <div class="name">
+                            <p id="logado"> </p>
+                        </div>
+                    </div>
+                </div>
+                <i class="fa-solid fa-arrow-right-from-bracket" id="log_out" onclick='sair()'></i>
+            </div>
+        </div>
+    </div>
+    <div class="home_content">
+        <div class="text">Home content</div>
+    </div> -->
+
+
+    <section id="sidebar">
+		<a href="#" class="brand">
+			<img src="../assets/tommyWhite.png" alt="logo tommy">
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="#">
+					<i class='bx bx-home-alt-2'></i>
+					<span class="text">Início</span>
+				</a>
+			</li>
+			<li>
+				<a href="../cursos/curso1.html">
+					<i class='bx bx-book-reader' ></i>
+					<span class="text">Cursos</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxl-youtube'></i>
+					<span class="text">Vídeos da semana</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bx-task-x'></i>
+					<span class="text">Atividades</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-certification'></i>
+					<span class="text">Certificados</span>
+				</a>
+			</li>
+            <li>
+				<a href="#">
+					<i class='bx bx-calendar'></i>
+					<span class="text">Calendário</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#">
+					<i class='bx bxs-cog' ></i>
+					<span class="text">Configurações</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="logout">
+					<i class='bx bx-log-out' onclick="sair()"></i>
+					<span class="text" onclick="sair()">Sair</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Categorias</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1 id="logado"></h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Início</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+					</ul>
+				</div>
+				<a href="#" class="btn-download">
+					<i class='bx bxl-youtube'></i>
+					<span class="text">Ver vídeos da semana</span>
+				</a>
+			</div>
+
+			<ul class="box-info">
+				<li>
+					<i class='bx bxs-calendar-check' ></i>
+					<span class="text">
+						<h3>Tarefas feitas</h3>
+						<p>113</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bx-book-reader' ></i>
+					<span class="text">
+						<h3>Minhas inscrições</h3>
+						<p>5</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-certification'></i>
+					<span class="text">
+						<h3>Certificados</h3>
+						<p>2</p>
+					</span>
+				</li>
+			</ul>
+
+
+			<div class="table-data">
+				<div class="order">
+					<div class="head">
+						<h3>Meus cursos</h3>
+						<i class='bx bx-search' ></i>
+						<i class='bx bx-filter' ></i>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th>Curso</th>
+								<th>Data de início</th>
+								<th>Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<img src="../assets/curso1.png">
+									<p>HTML e CSS</p>
+								</td>
+								<td>24-06-2023</td>
+								<td><span class="status completed">Finalizado</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="../assets/curso6.png">
+									<p>Javascript básico</p>
+								</td>
+								<td>01-10-2023</td>
+								<td><span class="status pending">Pendente</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="../assets/curso3.png">
+									<p>PHP básico</p>
+								</td>
+								<td>12-09-2023</td>
+								<td><span class="status pending">Pendente</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="../assets/curso4.png">
+									<p>Arq. de computadores</p>
+								</td>
+								<td>06-09-2023</td>
+								<td><span class="status pending">Pendente</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="../assets/curso5.png">
+									<p>Informática básica</p>
+								</td>
+								<td>10-04-2023</td>
+								<td><span class="status completed">Finalizado</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="todo">
+					<div class="head">
+						<h3>Lista de metas</h3>
+						<i class='bx bx-plus' ></i>
+						<i class='bx bx-filter' ></i>
+					</div>
+					<ul class="todo-list">
+						<li class="completed">
+							<p>Crie sua meta aqui</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+						</li>
+						<li class="completed">
+							<p>Crie sua meta aqui</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+						</li>
+						<li class="not-completed">
+							<p>Crie sua meta aqui</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+						</li>
+						<li class="completed">
+							<p>Crie sua meta aqui</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+						</li>
+						<li class="not-completed">
+							<p>Crie sua meta aqui</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+		<!-- MAIN -->
+	</section>
+
+
+
+
+
+
+    <!-- CUSTOM JS LINKS -->
+    <script type="text/javascript" src="sis.js"></script>
+
+
+
+
+</body>
+</html>
