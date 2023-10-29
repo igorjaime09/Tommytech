@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tommy Tech</title>
+
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="sistema.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/28d256e67b.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+
+    <section id="sidebar">
+		<a href="sistema.html" class="brand">
+			<img src="../assets/tommyWhite.png" alt="logo tommy">
+		</a>
+		<ul class="side-menu top">
+			<li>
+				<a href="sistema.html">
+					<i class='bx bx-home-alt-2'></i>
+					<span class="text">Início</span>
+				</a>
+			</li>
+			<li >
+				<a href="CURSOS.html">
+					<i class='bx bx-book-reader' ></i>
+					<span class="text">Cursos</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="VIDEOS.html">
+					<i class='bx bxl-youtube'></i>
+					<span class="text">Vídeos da semana</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bx-task-x'></i>
+					<span class="text">Atividades</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-certification'></i>
+					<span class="text">Certificados</span>
+				</a>
+			</li>
+            <li>
+				<a href="#">
+					<i class='bx bx-calendar'></i>
+					<span class="text">Calendário</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#">
+					<i class='bx bxs-cog' ></i>
+					<span class="text">Configurações</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="logout">
+					<i class='bx bx-log-out' onclick="sair()"></i>
+					<span class="text" onclick="sair()">Sair</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Categorias</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Pesquisar..."  >
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main >
+			<div class="head-title">
+				<div class="left">
+					<h1 >Vídeos da semana</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="sistema.html">Início</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="VIDEOS.html">Vídeos da semana</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+				<div class="container">
+					<div class="main-video-container">
+					
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/J-02VNxE7lE?si=Iofkpvt5nrMItXyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="main-video" controls></iframe>
+
+						<h3 class="main-vid-title">HTML vs DOM? Let's debug them</h3>
+						<p>O que é HTML? Qual é a tree DOM? Vamos desmistificá-los e aprender como depurá-los com DevTools.</p>
+
+					</div>
+					
+					<div class="video-list-container">
+						<div class="list">
+							<div class="infoUser">
+								<div class="foto"></div>
+
+								<div class="nome">
+									<strong>Sarah Monteiro</strong>
+								</div>
+							</div>
+							<div class="coment">
+								<p>Adorei a recomendação</p>
+							</div>
+
+							<div class="infoUser">
+								<div class="foto"></div>
+
+								<div class="nome">
+									<strong>Rafael Silva</strong>
+								</div>
+							</div>
+							<div class="coment">
+								<p>HTML é muito bom, eu gosto muito</p>
+							</div>
+							<div class="comentar">
+								<input type="text" placeholder="Comentar..." class="comentario"> 
+								<button class="btn"><i class='bx bx-send' ></i></button>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="main-video-container">
+					
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/ZkOb9D9hZ5Y?si=Q796H9Q0OZe3Xbm1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="main-video" controls ></iframe>
+
+						<h3 class="main-vid-title">Escolhendo a melhor linguagem de programação</h3>
+						<p>Neste vídeo Lucas Montano faz pesquisas na internet através de artigos e faz uma análise de qual a melhor linguagem.</p>
+
+					</div>
+					
+					<div class="video-list-container">
+						<div class="list">
+							<div class="infoUser">
+								<div class="foto"></div>
+
+								<div class="nome">
+									<strong>Sarah Monteiro</strong>
+								</div>
+							</div>
+							<div class="coment">
+								<p>Adorei a recomendação</p>
+							</div>
+
+							<div class="infoUser">
+								<div class="foto"></div>
+
+								<div class="nome">
+									<strong>Rafael Silva</strong>
+								</div>
+							</div>
+							<div class="coment">
+								<p>HTML é muito bom, eu gosto muito</p>
+							</div>
+							<div class="comentar">
+								<input type="text" placeholder="Comentar..." class="comentario"> 
+								<button class="btn"><i class='bx bx-send' ></i></button>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="main-video-container">
+					
+						<iframe src="https://www.youtube.com/embed/J-02VNxE7lE?si=5CpzC5KG17Z8QaUz&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="main-video"></iframe>
+
+						<h3 class="main-vid-title">HTML vs DOM? Let's debug them</h3>
+
+					</div>
+					
+					<div class="video-list-container">
+						<div class="list">
+							<div class="infoUser">
+								<div class="foto"></div>
+
+								<div class="nome">
+									<strong>Sarah Monteiro</strong>
+								</div>
+							</div>
+							<div class="coment">
+								<p>Adorei a recomendação</p>
+							</div>
+
+							<div class="infoUser">
+								<div class="foto"></div>
+
+								<div class="nome">
+									<strong>Rafael Silva</strong>
+								</div>
+							</div>
+							<div class="coment">
+								<p>HTML é muito bom, eu gosto muito</p>
+							</div>
+							<div class="comentar">
+								<input type="text" placeholder="Comentar..." class="comentario"> 
+								<button class="btn"><i class='bx bx-send' ></i></button>
+							</div>
+
+						</div>
+					</div>
+
+				
+		</main>
+		<!-- MAIN -->
+	</section>
+
+
+    <!-- CUSTOM JS LINKS -->
+    <script type="text/javascript" src="sis.js"></script>
+
+	<script>
+
+		if(localStorage.getItem('token') == null){
+    
+			alert('Você precisa estar logado para acessar esta página')
+			window.location.href = "../login/login.html"
+
+			}
+
+			let userLogado = JSON.parse(localStorage.getItem('userLogado'))
+			let logado = document.querySelector('#logado')
+
+			logado.innerHTML = `${'Olá, ' + userLogado.nome }`
+
+
+			function sair(){
+				localStorage.removeItem('token')
+				window.location.href = "../login/login.html"
+				localStorage.removeItem('userLogado')
+
+		}
+	</script>
+
+
+
+
+</body>
+</html>

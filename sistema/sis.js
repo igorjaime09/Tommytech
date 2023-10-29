@@ -11,8 +11,8 @@ allSideMenu.forEach(item=> {
 		})
 		li.classList.add('active');
 	})
-});
 
+});
 
 
 
@@ -72,25 +72,6 @@ window.addEventListener('resize', function () {
 
 
 
-if(localStorage.getItem('token') == null){
-    
-    alert('Você precisa estar logado para acessar esta página')
-    window.location.href = "../login/login.html"
-
-}
-
-let userLogado = JSON.parse(localStorage.getItem('userLogado'))
-let logado = document.querySelector('#logado')
-
-logado.innerHTML = `${'Olá, ' + userLogado.nome }`
 
 
-function sair(){
-    localStorage.removeItem('token')
-    window.location.href = "../login/login.html"
-    localStorage.removeItem('userLogado')
-
-}
-
-//SIDEBAR
 

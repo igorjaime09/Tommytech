@@ -16,326 +16,27 @@
 
 </head>
 <body>
-<!--    
-    
-    <header>
-        <a href="#home" class="logo">
-            <img src="../assets/techGreat2.png" alt="Logomarca Tommy Tech">
-        </a>    
-
-        <ul class="navbar">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#categorias">Categorias</a></li>
-            <li><a href="#courses">Cursos</a></li>
-            <li><a href="#about">Sobre nós</a></li>
-            <li><a href="#contact">Contato</a></li>
-        </ul>
-
-        <div class="header-icons">
-            <button onclick='sair()'>Sair</button>
-            <a href="#"><i class='bx bxl-youtube'></i></a>
-            <div class="bx bx-menu" id="menu-icon"></div>
-        </div>
-    </header>
-
-
-    
-    <section class="courses" id="courses">
-        <div class="center-text">
-            <h5>Seja bem-vindo(a)</h5>
-            <h2 id="logado"> </h2>
-        </div> 
-
-        <div class="courses-content">
-            <div onclick="window.location.href='../login/login.html';" class="row">
-                <img src="../assets/curso1.png" alt="imagem do curso de html e css">
-                <div class="courses-text">
-                    <h5>Gratuito</h5>
-                    <h3>Curso de HTML e CSS completo</h3>
-                    <h6>Carga horária de 20h</h6>
-                    <div class="rating">
-                        <div class="star">
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                        </div>
-                        <div class="review">
-                            <p>{227 Avaliações}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div onclick="window.location.href='../login/login.html';" class="row">
-                <img src="../assets/curso2.png" alt="imagem do curso de Lógica de programação">
-                <div class="courses-text">
-                    <h5>Gratuito</h5>
-                    <h3>Lógica de programação</h3>
-                    <h6>Carga horária de 40h</h6>
-                    <div class="rating">
-                        <div class="star">
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                        </div>
-                        <div class="review">
-                            <p>{400 Avaliações}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div onclick="window.location.href='../login/login.html';" class="row">
-                <img src="../assets/curso3.png" alt="imagem do curso de PHP básico">
-                <div class="courses-text">
-                    <h5>Gratuito</h5>
-                    <h3>PHP Básico</h3>
-                    <h6>Carga horária de 20h</h6>
-                    <div class="rating">
-                        <div class="star">
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                        </div>
-                        <div class="review">
-                            <p>{112 Avaliações}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div onclick="window.location.href='../login/login.html';" class="row">
-                <img src="../assets/curso4.png" alt="imagem do curso de Arquitetura de computadores">
-                <div class="courses-text">
-                    <h5>Gratuito</h5>
-                    <h3>Arquitetura de computadores</h3>
-                    <h6>Carga horária de 30h</h6>
-                    <div class="rating">
-                        <div class="star">
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                        </div>
-                        <div class="review">
-                            <p>{275 Avaliações}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div onclick="window.location.href='../login/login.html';" class="row">
-                <img src="../assets/curso5.png" alt="imagem do curso de Informática básica">
-                <div class="courses-text">
-                    <h5>Gratuito</h5>
-                    <h3>Informática básica</h3>
-                    <h6>Carga horária de 20h</h6>
-                    <div class="rating">
-                        <div class="star">
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                        </div>
-                        <div class="review">
-                            <p>{98 Avaliações}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div onclick="window.location.href='../login/login.html';" class="row">
-                <img src="../assets/curso6.png" alt="imagem do curso de javascript básico">
-                <div class="courses-text">
-                    <h5>Gratuito</h5>
-                    <h3>JavaScript básico</h3>
-                    <h6>Carga horária de 20h</h6>
-                    <div class="rating">
-                        <div class="star">
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                            <a href="#"><i class='bx bxs-star'></i></a>
-                        </div>
-                        <div class="review">
-                            <p>{1276 Avaliações}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="main-btn">
-            <a href="../login/login.html" class="btn">Todos os cursos</a>
-        </div>
-    </section>
-    
-
-    <section class="contact" id="contact">
-        <div class="main-contact">
-            <div class="contact-content">
-                <img src="../assets/techGreat2.png" alt="Logomarca Tommy Tech">
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Twitter</a></li>
-            </div>
-
-            <div class="contact-content">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#categorias">Categorias</a></li>
-                <li><a href="#courses">Cursos</a></li>
-                <li><a href="#about">Sobre nós</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </div>
-
-            <div class="contact-content">
-                <li><a href="#home">Perfil</a></li>
-                <li><a href="login/login.html">Login</a></li>
-                <li><a href="login/login.html#">Cadastro</a></li>
-                <li><a href="#">Instrutor</a></li>
-                <li><a href="#">Dashboard</a></li>
-            </div>
-
-            <div class="contact-content">
-                <li><a href="#">Goiânia,<br> Brasil, CA 94108 </a></li>
-                <li><a href="#">tommytech798@gmail.com</a></li>
-                <li><a href="#">(62) 98672-0928</a></li>
-            </div>
-            
-        </div>
-    </section>
-
-    <div class="last-text">
-        <p>© 2023 Igor Jaime. Todos direitos reservados.</p>
-    </div> 
--->
-
-
-    <!-- <div class="sidebar">
-        <div class="logo_content">
-            <div class="logo">
-                <img src="../assets/tommyWhite.png" alt="Logo tommy">
-            </div>
-            <i class="fa-solid fa-bars" id="btn"></i>
-        </div>
-        <ul class="nav_list">
-            <li>
-                    <i class='bx bx-search-alt'></i>
-                    <input type="text" placeholder="Pesquisar...">
-                <span class="tooltip">Pesquisar</span>
-            </li>
-
-            <li>
-                <a href="#">
-                    <i class='bx bx-grid-alt'></i>
-                    <span class="links_name">Dashboard</span>
-                </a>
-                <span class="tooltip">Dashboard</span>
-            </li>
-
-            <li>
-                <a href="#">
-                    <i class="fa-solid fa-user"></i>
-                    <span class="links_name">Usuário</span>
-                </a>
-                <span class="tooltip">Usuário</span>
-            </li>
-
-            <li>
-                <a href="#">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    <span class="links_name">Cursos</span>
-                </a>
-                <span class="tooltip">Cursos</span>
-            </li>
-
-            <li>
-                <a href="#">
-                    <i class="fa-brands fa-youtube"></i>
-                    <span class="links_name">Vídeos</span>
-                </a>
-                <span class="tooltip">Vídeos </span>
-            </li>
-
-            <li>
-                <a href="#">
-                    <i class="fa-solid fa-book-open-reader"></i>
-                    <span class="links_name">Atividades</span>
-                </a>
-                <span class="tooltip">Atividades</span>
-            </li>
-
-            <li>
-                <a href="#">
-                    <i class="fa-solid fa-folder-open"></i>
-                    <span class="links_name">Arquivos</span>
-                </a>
-                <span class="tooltip">Arquivos</span>
-            </li>
-
-            <li>
-                <a href="#">
-                    <i class="fa-solid fa-certificate"></i>
-                    <span class="links_name">Certificados</span>
-                </a>
-                <span class="tooltip">Certificados</span>
-            </li>
-
-            <li>
-                <a href="#">
-                    <i class="fa-solid fa-heart"></i>
-                    <span class="links_name">Favoritos</span>
-                </a>
-                <span class="tooltip">Favoritos</span>
-            </li>
-        </ul>
-        <div class="profile_content">
-            <div class="profile">
-                <div class="profile_details">
-                    <div class="name_job">
-                        <div class="name">
-                            <p id="logado"> </p>
-                        </div>
-                    </div>
-                </div>
-                <i class="fa-solid fa-arrow-right-from-bracket" id="log_out" onclick='sair()'></i>
-            </div>
-        </div>
-    </div>
-    <div class="home_content">
-        <div class="text">Home content</div>
-    </div> -->
 
 
     <section id="sidebar">
-		<a href="#" class="brand">
+		<a href="sistema.html" class="brand">
 			<img src="../assets/tommyWhite.png" alt="logo tommy">
 		</a>
 		<ul class="side-menu top">
 			<li class="active">
-				<a href="#">
+				<a href="sistema.html">
 					<i class='bx bx-home-alt-2'></i>
 					<span class="text">Início</span>
 				</a>
 			</li>
 			<li>
-				<a href="../cursos/curso1.html">
+				<a href="CURSOS.html">
 					<i class='bx bx-book-reader' ></i>
 					<span class="text">Cursos</span>
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="VIDEOS.html">
 					<i class='bx bxl-youtube'></i>
 					<span class="text">Vídeos da semana</span>
 				</a>
@@ -386,7 +87,7 @@
 			<a href="#" class="nav-link">Categorias</a>
 			<form action="#">
 				<div class="form-input">
-					<input type="search" placeholder="Search...">
+					<input type="search" placeholder="Pesquisar..." >
 					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
 				</div>
 			</form>
@@ -404,7 +105,7 @@
 					<h1 id="logado"></h1>
 					<ul class="breadcrumb">
 						<li>
-							<a href="#">Início</a>
+							<a href="sistema.html">Início</a>
 						</li>
 						<li><i class='bx bx-chevron-right' ></i></li>
 					</ul>
@@ -540,6 +241,33 @@
 
     <!-- CUSTOM JS LINKS -->
     <script type="text/javascript" src="sis.js"></script>
+
+
+	<script>
+		
+
+
+
+		if(localStorage.getItem('token') == null){
+    
+			alert('Você precisa estar logado para acessar esta página')
+			window.location.href = "../login/login.html"
+
+			}
+
+			let userLogado = JSON.parse(localStorage.getItem('userLogado'))
+			let logado = document.querySelector('#logado')
+
+			logado.innerHTML = `${'Olá, ' + userLogado.nome }`
+
+
+			function sair(){
+				localStorage.removeItem('token')
+				window.location.href = "../login/login.html"
+				localStorage.removeItem('userLogado')
+
+		}
+	</script>
 
 
 

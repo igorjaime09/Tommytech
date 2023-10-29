@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tommy Tech</title>
+
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="sistema.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/28d256e67b.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+
+    <section id="sidebar">
+		<a href="sistema.html" class="brand">
+			<img src="../assets/tommyWhite.png" alt="logo tommy">
+		</a>
+		<ul class="side-menu top">
+			<li>
+				<a href="sistema.html">
+					<i class='bx bx-home-alt-2'></i>
+					<span class="text">Início</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="CURSOS.html">
+					<i class='bx bx-book-reader' ></i>
+					<span class="text">Cursos</span>
+				</a>
+			</li>
+			<li>
+				<a href="VIDEOS.html">
+					<i class='bx bxl-youtube'></i>
+					<span class="text">Vídeos da semana</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bx-task-x'></i>
+					<span class="text">Atividades</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-certification'></i>
+					<span class="text">Certificados</span>
+				</a>
+			</li>
+            <li>
+				<a href="#">
+					<i class='bx bx-calendar'></i>
+					<span class="text">Calendário</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#">
+					<i class='bx bxs-cog' ></i>
+					<span class="text">Configurações</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="logout">
+					<i class='bx bx-log-out' onclick="sair()"></i>
+					<span class="text" onclick="sair()">Sair</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Categorias</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Pesquisar..."  >
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main >
+			<div class="head-title">
+				<div class="left">
+					<h1 >Cursos</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="sistema.html">Início</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="CURSOS.html">Cursos</a>
+						</li>
+					</ul>
+				</div>
+				<a href="#" class="btn-download">
+					<i class='bx bxl-youtube'></i>
+					<span class="text">Ver vídeos da semana</span>
+				</a>
+			</div>
+
+			<ul class="cursos">
+				<li>
+					<img src="../assets/curso1.png" alt="curso html">
+					<span class="text">
+						<h3>HTML e CSS completo</h3>
+						<div class="star">
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                        </div>
+						<p>
+							Neste curso, partindo do básico, você aprenderá HTML e CSS para criar e estilizar páginas web, tornando-as responsivas, com a oportunidade de criar projetos práticos.
+						</p>
+						<div class="enroll-btn">
+							<a href="../cursos/curso1.html" class="blue" target="_blank">Ver curso</a>
+						</div>
+							
+					</span>
+				</li>
+				
+				<li>
+					<img src="../assets/curso2.png" alt="curso html">
+					<span class="text">
+						<h3>Lógica de programação</h3>
+						<div class="star">
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                        </div>
+						<p>Curso ensina lógica de programação, criando algoritmos e resolvendo problemas de forma estruturada, independentemente do nível de experiência.</p>
+						<div class="enroll-btn">
+							<a href="../cursos/curso2.html" class="blue" target="_blank">Ver curso</a>
+						</div>
+					</span>
+				</li>
+				<li>
+					<img src="../assets/curso3.png" alt="curso html">
+					<span class="text">
+						<h3>PHP básico</h3>
+						<div class="star">
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                        </div>
+						<p>Neste curso, você aprenderá PHP, desde a sintaxe básica até a interação com bancos de dados, para criar páginas web dinâmicas e personalizadas. Este é um passo crucial no desenvolvimento web.</p>
+						<div class="enroll-btn">
+							<a href="../cursos/curso3.html" class="blue" target="_blank">Ver curso</a>
+						</div>
+					</span>
+					
+				</li>
+				<li>
+					<img src="../assets/curso4.png" alt="curso html">
+					<span class="text">
+						<h3>Arquitetura de computadores</h3>
+						<div class="star">
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                        </div>
+						<p>O curso explora computadores, memória, dispositivos de entrada e saída, proporcionando base sólida na Arquitetura de Computadores.</p>
+						<div class="enroll-btn">
+							<a href="../cursos/curso4.html" class="blue" target="_blank">Ver curso</a>
+						</div>
+					</span>
+				</li>
+				<li>
+					<img src="../assets/curso5.png" alt="curso html">
+					<span class="text">
+						<h3>Informática básica</h3>
+						<div class="star">
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                        </div>
+						<p>Este curso abrange desde noções iniciais de informática até segurança online, preparando você para explorar o mundo digital com confiança.</p>
+						<div class="enroll-btn">
+							<a href="../cursos/curso5.html" class="blue" target="_blank">Ver curso</a>
+						</div>
+					</span>
+				</li>
+				<li>
+					<img src="../assets/curso6.png" alt="curso html">
+					<span class="text">
+						<h3>Javascript básico</h3>
+						<div class="star">
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                        </div>
+						<p>Este curso ensina os conceitos essenciais do JavaScript, desde variáveis até interação com sites, preparando você para desenvolvimento web e o uso de bibliotecas populares como jQuery e React.</p>
+						<div class="enroll-btn">
+							<a href="../cursos/curso6.html" class="blue" target="_blank">Ver curso</a>
+						</div>
+					</span>
+				</li>
+			</ul>
+		</main>
+		<!-- MAIN -->
+	</section>
+
+
+    <!-- CUSTOM JS LINKS -->
+    <script type="text/javascript" src="sis.js"></script>
+
+	<script>
+
+		if(localStorage.getItem('token') == null){
+    
+			alert('Você precisa estar logado para acessar esta página')
+			window.location.href = "../login/login.html"
+
+			}
+
+			let userLogado = JSON.parse(localStorage.getItem('userLogado'))
+			let logado = document.querySelector('#logado')
+
+			logado.innerHTML = `${'Olá, ' + userLogado.nome }`
+
+
+			function sair(){
+				localStorage.removeItem('token')
+				window.location.href = "../login/login.html"
+				localStorage.removeItem('userLogado')
+
+		}
+	</script>
+
+
+
+
+</body>
+</html>
