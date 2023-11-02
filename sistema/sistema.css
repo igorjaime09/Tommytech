@@ -985,27 +985,11 @@ body {
       opacity: 1;
     }
   }
-  @media (max-width: 576px) {
+  @media (max-width: 375px) {
     .month-list>div{
   
       margin: 5px 0px
     }
-
-	.date-time-value{
-		font-size: 1rem;
-    	padding-right: 5%;
-    	position: absolute;
-    	left: -1rem;
-	}
-
-	.day-text-formate {
-		font-size: 1.4rem;
-    	padding-right: 5%;
-		border-bottom: 3px solid var(--main-color);
-		border-right: none;
-    	left: 6.2rem;
-		bottom: 2.5rem;
-	}
   }
 
 
