@@ -23,7 +23,7 @@
 			<img src="../assets/tommyWhite.png" alt="logo tommy">
 		</a>
 		<ul class="side-menu top">
-			<li class="active">
+			<li>
 				<a href="sistema.html">
 					<i class='bx bx-home-alt-2'></i>
 					<span class="text">Início</span>
@@ -41,7 +41,7 @@
 					<span class="text">Vídeos da semana</span>
 				</a>
 			</li>
-			<li>
+			<li class="active">
 				<a href="ATIVIDADES.html">
 					<i class='bx bx-task-x'></i>
 					<span class="text">Atividades</span>
@@ -102,12 +102,15 @@
 		<main>
 			<div class="head-title">
 				<div class="left">
-					<h1 id="logado"></h1>
+					<h1>Atividades</h1>
 					<ul class="breadcrumb">
 						<li>
 							<a href="sistema.html">Início</a>
 						</li>
 						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="ATIVIDADES.html">Atividades</a>
+						</li>
 					</ul>
 				</div>
 				<a href="VIDEOS.html" class="btn-download">
@@ -116,116 +119,94 @@
 				</a>
 			</div>
 
-			<ul class="box-info">
-				<li>
-					<i class='bx bxs-calendar-check' ></i>
-					<span class="text">
-						<h3>Tarefas feitas</h3>
-						<p>113</p>
-					</span>
-				</li>
-				<li>
-					<i class='bx bx-book-reader' ></i>
-					<span class="text">
-						<h3>Minhas inscrições</h3>
-						<p>5</p>
-					</span>
-				</li>
-				<li>
-					<i class='bx bxs-certification'></i>
-					<span class="text">
-						<h3>Certificados</h3>
-						<p>2</p>
-					</span>
-				</li>
-			</ul>
+			<div class="table-data">
+				<div class="todo">
+					<div class="head">
+						<h3>Tarefas a fazer</h3>
+					</div>
+					<ul class="todo-list">
+						<li class="not-completed">
+							<img src="../assets/curso4.png" alt="Curso arquitetura de computadores">
+							<p>Tarefa 04 - Arqu. computadores</p>
+							<i class='bx bx-time-five'></i>
+						</li>
+						<li class="not-completed">
+							<img src="../assets/curso1.png" alt="Curso arquitetura de computadores">
+							<p>Tarefa 03 - HTML E CSS</p>
+							<i class='bx bx-time-five'></i>
+						</li>
+						<li class="not-completed">
+							<img src="../assets/curso3.png" alt="Curso arquitetura de computadores">
+							<p>Tarefa 02 - PHP básico</p>
+							<i class='bx bx-time-five'></i>
+						</li>
+						<li class="not-completed">
+							<img src="../assets/curso6.png" alt="Curso arquitetura de computadores">
+							<p>Tarefa 02 - Javascript básico</p>
+							<i class='bx bx-time-five'></i>
+						</li>
+						<li class="not-completed">
+							<img src="../assets/curso2.png" alt="Curso arquitetura de computadores">
+							<p>Tarefa 03 - Lógica de programação</p>
+							<i class='bx bx-time-five'></i>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+
 
 
 			<div class="table-data">
-				<div class="order">
-					<div class="head">
-						<h3>Meus cursos</h3>
-						<i class='bx bx-search' ></i>
-						<i class='bx bx-filter' ></i>
-					</div>
-					<table>
-						<thead>
-							<tr>
-								<th>Curso</th>
-								<th>Data de início</th>
-								<th>Status</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<img src="../assets/curso1.png">
-									<p>HTML e CSS</p>
-								</td>
-								<td>24-06-2023</td>
-								<td><span class="status completed">Finalizado</span></td>
-							</tr>
-							<tr>
-								<td>
-									<img src="../assets/curso6.png">
-									<p>Javascript básico</p>
-								</td>
-								<td>01-10-2023</td>
-								<td><span class="status pending">Pendente</span></td>
-							</tr>
-							<tr>
-								<td>
-									<img src="../assets/curso3.png">
-									<p>PHP básico</p>
-								</td>
-								<td>12-09-2023</td>
-								<td><span class="status pending">Pendente</span></td>
-							</tr>
-							<tr>
-								<td>
-									<img src="../assets/curso4.png">
-									<p>Arq. de computadores</p>
-								</td>
-								<td>06-09-2023</td>
-								<td><span class="status pending">Pendente</span></td>
-							</tr>
-							<tr>
-								<td>
-									<img src="../assets/curso5.png">
-									<p>Informática básica</p>
-								</td>
-								<td>10-04-2023</td>
-								<td><span class="status completed">Finalizado</span></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
 				<div class="todo">
 					<div class="head">
-						<h3>Lista de metas</h3>
-						<i class='bx bx-plus' ></i>
-						<i class='bx bx-filter' ></i>
+						<h3>Tarefas Feitas</h3>
 					</div>
 					<ul class="todo-list">
 						<li class="completed">
-							<p>Crie sua meta aqui</p>
-							<i class='bx bx-dots-vertical-rounded' ></i>
+							<img src="../assets/curso4.png" alt="Curso arquitetura de computadores">
+							<p>Tarefa 01 - Arqu. computadores</p>
+							<i class='bx bx-check'></i>
 						</li>
 						<li class="completed">
-							<p>Crie sua meta aqui</p>
-							<i class='bx bx-dots-vertical-rounded' ></i>
-						</li>
-						<li class="not-completed">
-							<p>Crie sua meta aqui</p>
-							<i class='bx bx-dots-vertical-rounded' ></i>
+							<img src="../assets/curso4.png" alt="Curso arquitetura de computadores">
+							<p>Tarefa 02 - Arqu. computadores</p>
+							<i class='bx bx-check'></i>
 						</li>
 						<li class="completed">
-							<p>Crie sua meta aqui</p>
-							<i class='bx bx-dots-vertical-rounded' ></i>
+							<img src="../assets/curso4.png" alt="Curso arquitetura de computadores">
+							<p>Tarefa 03 - Arqu. computadores</p>
+							<i class='bx bx-check'></i>
 						</li>
-						<li class="not-completed">
-							<p>Crie sua meta aqui</p>
-							<i class='bx bx-dots-vertical-rounded' ></i>
+						<li class="completed">
+							<img src="../assets/curso1.png" alt="Curso arquitetura de computadores">
+							<p>Tarefa 01 - HTML E CSS</p>
+							<i class='bx bx-check'></i>
+						</li>
+						<li class="completed">
+							<img src="../assets/curso1.png" alt="Curso arquitetura de computadores">
+							<p>Tarefa 02 - HTML E CSS</p>
+							<i class='bx bx-check'></i>
+						</li>
+						<li class="completed">
+							<img src="../assets/curso3.png" alt="Curso arquitetura de computadores">
+							<p>Tarefa 01 - PHP básico</p>
+							<i class='bx bx-check'></i>
+						</li>
+						<li class="completed">
+							<img src="../assets/curso6.png" alt="Curso arquitetura de computadores">
+							<p>Tarefa 01 - Javascript básico</p>
+							<i class='bx bx-check'></i>
+						</li>
+						<li class="completed">
+							<img src="../assets/curso2.png" alt="Curso arquitetura de computadores">
+							<p>Tarefa 01 - Lógica de programação</p>
+							<i class='bx bx-check'></i>
+						</li>
+						<li class="completed">
+							<img src="../assets/curso2.png" alt="Curso arquitetura de computadores">
+							<p>Tarefa 02 - Lógica de programação</p>
+							<i class='bx bx-check'></i>
 						</li>
 					</ul>
 				</div>

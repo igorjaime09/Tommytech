@@ -540,6 +540,13 @@ body {
 	justify-content: space-between;
 	align-items: center;
 }
+
+#content main .table-data .todo .todo-list li img{
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	object-fit: cover;
+}
 #content main .table-data .todo .todo-list li .bx {
 	cursor: pointer;
 }
@@ -607,6 +614,8 @@ body {
 	border-radius: 10px;
 	height: 455px;
 	box-shadow: 0 5px 15px rgba(0,0,0,.1);
+	position: relative;
+	overflow: auto;
 }
 
 .container .video-list-container .list:last-child{
@@ -651,14 +660,6 @@ body {
 	text-transform: uppercase;
 }
 	
-.container .video-list-container .list .comentar .btn:hover{
-	transition : 265ms;
-	padding: 10px 50px;
-	transform : translateY(-0px);
-	background-color: #fff;
-	color: var(--main-color);
-	border: solid 2px var(--main-color);
-}
 
 .container .video-list-container .list .comentar .comentario{
 	flex-grow: 1;
@@ -670,9 +671,15 @@ body {
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
 
-.container .video-list-container .list .comentar input{
-	margin-top: 250px;
-	margin-left: 20px;
+.container .video-list-container .list .comentar{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+	padding: 10px;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
 }
 
 
@@ -732,8 +739,8 @@ body {
 		height: 30vh;
 	}
 
-	.container .video-list-container{
-		display: none;
+	.container .video-list-container .list .comentar .comentario{
+		width: 140px;
 	}
 
 	#content nav form.show .form-input button {
@@ -786,5 +793,11 @@ body {
 	}
 	#content main .table-data .todo .todo-list {
 		min-width: 420px;
+	}
+}
+
+@media screen and (max-width: 360px){
+	.container .video-list-container .list .comentar .comentario{
+		width: 120px;
 	}
 }
