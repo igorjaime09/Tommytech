@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tommy Tech</title>
+
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="sistema.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/28d256e67b.js" crossorigin="anonymous"></script>
+
+</head>
+<body id="calendar">
+
+	<header>
+        <a href="../sistema/sistema.html" class="logo">
+            <img src="../assets/techGreat2.png" alt="Logomarca Tommy Tech">
+        </a>    
+
+        <ul class="navbar">
+            <li><a href="../sistema/sistema.html">início</a></li>
+            <li><a href="../sistema/CURSOS.html">Cursos</a></li>
+            <li><a href="../sistema/VIDEOS.html">Vídeos</a></li>
+            <li><a href="../sistema/ATIVIDADES.html">Atividades</a></li>
+            <li><a href="../sistema/CERTIFICADOS.html">Certificados</a></li>
+            <li><a href="../sistema/CALENDARIO.html">Calenário</a></li>
+        </ul>
+
+        <div class="header-icons">
+            <a href="#"><i class='bx bxl-youtube'></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    
+	<section>
+		<div class="contianer">
+			<div class="calendar">
+			  <div class="calendar-header">
+				<span class="month-picker" id="month-picker"> May </span>
+				<div class="year-picker" id="year-picker">
+				  <span class="year-change" id="pre-year">
+					<pre><</pre>
+				  </span>
+				  <span id="year">2020 </span>
+				  <span class="year-change" id="next-year">
+					<pre>></pre>
+				  </span>
+				</div>
+			  </div>
+	   
+			  <div class="calendar-body">
+				<div class="calendar-week-days">
+				  <div>Dom</div>
+				  <div>Seg</div>
+				  <div>Ter</div>
+				  <div>Qua</div>
+				  <div>Qui</div>
+				  <div>Sex</div>
+				  <div>Sáb</div>
+				</div>
+				<div class="calendar-days">
+				</div>
+			  </div>
+			  <div class="calendar-footer">
+			  </div>
+			  <div class="date-time-formate">
+				<div class="day-text-formate">HOJE</div>
+				<div class="date-time-value">
+				  <div class="time-formate">02:51:20</div>
+				  <div class="date-formate">23 - Julho - 2022</div>
+				</div>
+			  </div>
+			  <div class="month-list"></div>
+			</div>
+		  </div>
+	</section>
+
+
+
+
+
+    <!-- CUSTOM JS LINKS -->
+    <script type="text/javascript" src="sis.js"></script>
+
+
+	<script>
+
+		const isLeapYear = (year) => {
+			return (
+			(year % 4 === 0 && year % 100 !== 0 && year % 400 !== 0) ||
+			(year % 100 === 0 && year % 400 === 0)
+			);
+		};
+		const getFebDays = (year) => {
+			return isLeapYear(year) ? 29 : 28;
+		};
+		let calendar = document.querySelector('.calendar');
+		const month_names = [
+			'Janeiro',
+			'Fevereiro',
+			'Março',
+			'Abril',
+			'Maio',
+			'Junho',
+			'Julho',
+			'Agosto',
+			'Setembro',
+			'Outubro',
+			'Novembro',
+			'Dezembro',
+		];
+		let month_picker = document.querySelector('#month-picker');
+		const dayTextFormate = document.querySelector('.day-text-formate');
+		const timeFormate = document.querySelector('.time-formate');
+		const dateFormate = document.querySelector('.date-formate');
+		
+		month_picker.onclick = () => {
+			month_list.classList.remove('hideonce');
+			month_list.classList.remove('hide');
+			month_list.classList.add('show');
+			dayTextFormate.classList.remove('showtime');
+			dayTextFormate.classList.add('hidetime');
+			timeFormate.classList.remove('showtime');
+			timeFormate.classList.add('hideTime');
+			dateFormate.classList.remove('showtime');
+			dateFormate.classList.add('hideTime');
+		};
+		
+		const generateCalendar = (month, year) => {
+			let calendar_days = document.querySelector('.calendar-days');
+			calendar_days.innerHTML = '';
+			let calendar_header_year = document.querySelector('#year');
+			let days_of_month = [
+			31,
+			getFebDays(year),
+			31,
+			30,
+			31,
+			30,
+			31,
+			31,
+			30,
+			31,
+			30,
+			31,
+			];
+			
+			let currentDate = new Date();
+			
+			month_picker.innerHTML = month_names[month];
+			
+			calendar_header_year.innerHTML = year;
+			
+			let first_day = new Date(year, month);
+		
+		
+		for (let i = 0; i <= days_of_month[month] + first_day.getDay() - 1; i++) {
+		
+			let day = document.createElement('div');
+		
+			if (i >= first_day.getDay()) {
+				day.innerHTML = i - first_day.getDay() + 1;
+
+				if (i - first_day.getDay() + 1 === currentDate.getDate() &&
+				year === currentDate.getFullYear() &&
+				month === currentDate.getMonth()
+				) {
+				day.classList.add('current-date');
+				}
+			}
+			calendar_days.appendChild(day);
+			}
+		};
+		
+		let month_list = calendar.querySelector('.month-list');
+		month_names.forEach((e, index) => {
+			let month = document.createElement('div');
+			month.innerHTML = `<div>${e}</div>`;
+		
+			month_list.append(month);
+			month.onclick = () => {
+			currentMonth.value = index;
+			generateCalendar(currentMonth.value, currentYear.value);
+			month_list.classList.replace('show', 'hide');
+			dayTextFormate.classList.remove('hideTime');
+			dayTextFormate.classList.add('showtime');
+			timeFormate.classList.remove('hideTime');
+			timeFormate.classList.add('showtime');
+			dateFormate.classList.remove('hideTime');
+			dateFormate.classList.add('showtime');
+			};
+		});
+		
+		(function () {
+			month_list.classList.add('hideonce');
+		})();
+		document.querySelector('#pre-year').onclick = () => {
+			--currentYear.value;
+			generateCalendar(currentMonth.value, currentYear.value);
+		};
+		document.querySelector('#next-year').onclick = () => {
+			++currentYear.value;
+			generateCalendar(currentMonth.value, currentYear.value);
+		};
+		
+		let currentDate = new Date();
+		let currentMonth = { value: currentDate.getMonth() };
+		let currentYear = { value: currentDate.getFullYear() };
+		generateCalendar(currentMonth.value, currentYear.value);
+
+		const todayShowTime = document.querySelector('.time-formate');
+		const todayShowDate = document.querySelector('.date-formate');
+		
+		const currshowDate = new Date();
+		const showCurrentDateOption = {
+			year: 'numeric',
+			month: 'long',
+			day: 'numeric',
+			weekday: 'long',
+		};
+		const currentDateFormate = new Intl.DateTimeFormat(
+			'pt-BR',
+			showCurrentDateOption
+		).format(currshowDate);
+		todayShowDate.textContent = currentDateFormate;
+		setInterval(() => {
+			const timer = new Date();
+			const option = {
+			hour: 'numeric',
+			minute: 'numeric',
+			second: 'numeric',
+			};
+			const formateTimer = new Intl.DateTimeFormat('en-us', option).format(timer);
+			let time = `${`${timer.getHours()}`.padStart(
+			2,
+			'0'
+			)}:${`${timer.getMinutes()}`.padStart(
+			2,
+			'0'
+			)}: ${`${timer.getSeconds()}`.padStart(2, '0')}`;
+			todayShowTime.textContent = formateTimer;
+		}, 1000);
+
+
+		
+		const header = document.querySelector("header");
+
+		window.addEventListener ("scroll", function(){
+			header.classList.toggle("sticky", window.scrollY > 0);
+		});
+
+		let menu = document.querySelector('#menu-icon');
+		let navbar = document.querySelector('.navbar');
+
+		menu.onclick = () => {
+			menu.classList.toggle('bx-x');
+			navbar.classList.toggle('open');
+		};
+
+		window.onscroll = () => {
+			menu.classList.remove('bx-x');
+			navbar.classList.remove('open');
+		};
+
+
+		if(localStorage.getItem('token') == null){
+    
+			alert('Você precisa estar logado para acessar esta página')
+			window.location.href = "../login/login.html"
+
+			}
+
+			let userLogado = JSON.parse(localStorage.getItem('userLogado'))
+			let logado = document.querySelector('#logado')
+
+			logado.innerHTML = `${'Olá, ' + userLogado.nome }`
+
+
+			function sair(){
+				localStorage.removeItem('token')
+				window.location.href = "../login/login.html"
+				localStorage.removeItem('userLogado')
+
+		}
+
+	</script>
+
+
+
+
+</body>
+</html>
