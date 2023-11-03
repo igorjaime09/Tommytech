@@ -992,19 +992,20 @@ body {
     }
 
 	.date-time-value{
-		font-size: 1rem;
-    	padding-right: 5%;
-    	position: absolute;
-    	left: -1rem;
+		display: none;
+
 	}
 
 	.day-text-formate {
-		font-size: 1.4rem;
-    	padding-right: 5%;
-		border-bottom: 3px solid var(--main-color);
-		border-right: none;
-    	left: 6.2rem;
-		bottom: 2.5rem;
+		display: none;
+	}
+
+	.calendar{
+		height: 75vh;
+	}
+
+	.calendar-days{
+		height: 35vh;
 	}
   }
 
