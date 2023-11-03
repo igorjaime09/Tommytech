@@ -29,12 +29,14 @@
             <li><a href="../sistema/VIDEOS.html">Vídeos</a></li>
             <li><a href="../sistema/ATIVIDADES.html">Atividades</a></li>
             <li><a href="../sistema/CERTIFICADOS.html">Certificados</a></li>
-            <li><a href="../sistema/CALENDARIO.html">Calenário</a></li>
         </ul>
 
         <div class="header-icons">
-            <a href="#"><i class='bx bxl-youtube'></i></a>
-            <div class="bx bx-menu" id="menu-icon"></div>
+			<a href="PERFIL.HTML" class="notification">
+				<i class='bx bx-user'></i>
+			</a>
+            <a href="VIDEOS.html"><i class='bx bxl-youtube'></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>	
         </div>
     </header>
 
@@ -237,7 +239,7 @@
 			minute: 'numeric',
 			second: 'numeric',
 			};
-			const formateTimer = new Intl.DateTimeFormat('en-us', option).format(timer);
+			const formateTimer = new Intl.DateTimeFormat('pt-BR', option).format(timer);
 			let time = `${`${timer.getHours()}`.padStart(
 			2,
 			'0'

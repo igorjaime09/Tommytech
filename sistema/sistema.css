@@ -716,6 +716,61 @@ body {
 	width: 100%;
 }
 
+/* CERTIFICADOS */
+
+#content main .certificate{
+	display: grid;
+	grid-gap: 24px;
+	margin-top: 36px;
+}
+
+#content main .certificate li{
+	padding: 15px;
+	background: var(--light);
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	grid-gap: 24px;
+	box-shadow: 0 5px 15px rgba(0,0,0,.1);
+}
+
+#content main .certificate li img{
+	width: 170px;
+	height: 120px;
+	border-radius: 5px;
+}
+
+#content main .certificate li .titulo{
+	display: flex;
+	justify-content: center;
+}
+
+#content main .certificate li .titulo .nome{
+	margin-left: 20px;
+}
+
+#content main .certificate li .titulo p{
+	font-size: 0.8rem;
+}
+
+#content main .certificate li .btn-cert{
+	margin-left: auto;
+}
+
+#content main .certificate li .btn-download{
+	height: 36px;
+	width: 20vw;
+	padding: 0 16px;
+	border-radius: 16px;
+	background: var(--main-color);
+	color: var(--light);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 500;
+}
+
+
 /* CALENDARIO */
 
 .contianer {
@@ -934,6 +989,8 @@ body {
     animation: showtime 1s forwards;
   }
 
+
+
   
   @keyframes to-top {
     0% {
@@ -1010,12 +1067,43 @@ body {
   }
 
 
-@media (max-width: 1200px){
+
+
+@media (max-width: 1230px){
 
 	.container .main-video-container .main-video{
 		width: 100%;
 		height: 415px;
 	}
+
+	#content main .certificate li .btn-download{
+		width: 25vw;
+	}
+}
+
+@media (max-width: 1150px){
+	#content main .certificate li{
+		flex-direction: column;
+	}
+
+	#content main .certificate li .titulo {
+		margin-right: auto;
+	}
+
+	#content main .certificate li .btn-cert{
+		margin-right: auto;
+	}
+
+	#content main .certificate li .btn-download{
+		width: 50vw;
+	}
+
+}
+
+@media screen and (max-width: 860px){
+
+	
+
 }
 
 @media screen and (max-width: 768px) {
@@ -1035,6 +1123,7 @@ body {
 	.container .video-list-container .list .comentar .comentario{
 		width: 200px;
 	}
+
 
 }
 
@@ -1119,6 +1208,15 @@ body {
 	}
 	#content main .table-data .todo .todo-list {
 		min-width: 420px;
+	}
+
+	#content main .certificate li .titulo{
+		flex-direction: column;
+		margin: auto;
+	}
+
+	#content main .certificate li .titulo img{
+		margin: auto;
 	}
 }
 
