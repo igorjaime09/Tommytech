@@ -23,7 +23,7 @@
 			<img src="../assets/tommyWhite.png" alt="logo tommy">
 		</a>
 		<ul class="side-menu top">
-			<li class="active">
+			<li>
 				<a href="sistema.html">
 					<i class='bx bx-home-alt-2'></i>
 					<span class="text">Início</span>
@@ -48,7 +48,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="CERTIFICADOS.html">
 					<i class='bx bxs-certification'></i>
 					<span class="text">Certificados</span>
 				</a>
@@ -91,8 +91,8 @@
 					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
 				</div>
 			</form>
-			<a href="PERFIL.HTML" class="notification">
-				<i class='bx bx-user'></i>
+			<a href="PERFIL.HTML" class="perfil">
+				<img src="../assets/profile.png" alt="Foto de perfil" id="profile-pic2">
 			</a>
 			<a href="#" class="notification">
 				<i class='bx bxs-bell' ></i>
@@ -105,7 +105,7 @@
 		<main>
 			<div class="head-title">
 				<div class="left">
-					<h1 id="logado"></h1>
+					<h1>Meu perfil</h1>
 					<ul class="breadcrumb">
 						<li>
 							<a href="sistema.html">Início</a>
@@ -119,27 +119,17 @@
 				</a>
 			</div>
 
-			<ul class="box-info">
+			<ul class="foto">
 				<li>
-					<i class='bx bxs-calendar-check' ></i>
-					<span class="text">
-						<h3>Tarefas feitas</h3>
-						<p>113</p>
-					</span>
-				</li>
-				<li>
-					<i class='bx bx-book-reader' ></i>
-					<span class="text">
-						<h3>Minhas inscrições</h3>
-						<p>5</p>
-					</span>
-				</li>
-				<li>
-					<i class='bx bxs-certification'></i>
-					<span class="text">
-						<h3>Certificados</h3>
-						<p>2</p>
-					</span>
+					<div class="hero">
+						<div class="card">
+							<h1 id="logado"></h1>
+							<p id="email"></p>
+							<img src="../assets/profile.png" alt="Foto de perfil" id="profile-pic">
+							<label for="input-file" class="up_img" id="reload-button">Carregar imagem</label>
+							<input type="file" accept="image/*" id="input-file" onchange="converterImagem()">
+						</div>
+					</div>
 				</li>
 			</ul>
 
@@ -261,15 +251,27 @@
 			let userLogado = JSON.parse(localStorage.getItem('userLogado'))
 			let logado = document.querySelector('#logado')
 
-			logado.innerHTML = `${'Olá, ' + userLogado.nome }`
+			logado.innerHTML = `${userLogado.nome }`
+
+			let emailLogado = JSON.parse(localStorage.getItem('userLogado'))
+			let email = document.querySelector('#email')
+
+			email.innerHTML = `${userLogado.email }`
 
 
 			function sair(){
 				localStorage.removeItem('token')
-				window.location.href = "../login/login.html"
+				window.location.href = "../index.html"
 				localStorage.removeItem('userLogado')
 
 		}
+
+		
+
+
+		
+
+		
 	</script>
 
 

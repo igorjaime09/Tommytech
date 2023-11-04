@@ -91,8 +91,8 @@
 					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
 				</div>
 			</form>
-			<a href="PERFIL.HTML" class="notification">
-				<i class='bx bx-user'></i>
+			<a href="PERFIL.HTML" class="perfil">
+				<img src="../assets/profile.png" alt="Foto de perfil" id="profile-pic">
 			</a>
 			<a href="#" class="notification">
 				<i class='bx bxs-bell' ></i>
@@ -105,7 +105,7 @@
 		<main>
 			<div class="head-title">
 				<div class="left">
-					<h1 id="logado"></h1>
+					<h1>Meu Perfil</h1>
 					<ul class="breadcrumb">
 						<li>
 							<a href="sistema.html">Início</a>
@@ -124,21 +124,21 @@
 					<i class='bx bxs-calendar-check' ></i>
 					<span class="text">
 						<h3>Tarefas feitas</h3>
-						<p>113</p>
+						<p>9</p>
 					</span>
 				</li>
 				<li>
 					<i class='bx bx-book-reader' ></i>
 					<span class="text">
 						<h3>Minhas inscrições</h3>
-						<p>5</p>
+						<p>6</p>
 					</span>
 				</li>
 				<li>
 					<i class='bx bxs-certification'></i>
 					<span class="text">
 						<h3>Certificados</h3>
-						<p>2</p>
+						<p>6</p>
 					</span>
 				</li>
 			</ul>
@@ -247,8 +247,8 @@
 
 
 	<script>
-		
 
+	
 
 
 		if(localStorage.getItem('token') == null){
@@ -266,7 +266,7 @@
 
 			function sair(){
 				localStorage.removeItem('token')
-				window.location.href = "../login/login.html"
+				window.location.href = "../index.html"
 				localStorage.removeItem('userLogado')
 
 		}

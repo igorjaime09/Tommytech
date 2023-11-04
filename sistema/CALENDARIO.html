@@ -32,8 +32,8 @@
         </ul>
 
         <div class="header-icons">
-			<a href="PERFIL.HTML" class="notification">
-				<i class='bx bx-user'></i>
+			<a href="PERFIL.HTML" class="perfil">
+				<img src="../assets/profile.png" alt="Foto de perfil" id="profile-pic">
 			</a>
             <a href="VIDEOS.html"><i class='bx bxl-youtube'></i></a>
             <div class="bx bx-menu" id="menu-icon"></div>	
@@ -93,6 +93,17 @@
 
 
 	<script>
+
+		document.addEventListener('DOMContentLoaded', function() {
+			// Recupere a imagem base64 do localStorage
+			const base64String = localStorage.getItem('profilePicBase64');
+			
+			// Verifique se a imagem existe no localStorage
+			if (base64String) {
+				// Encontre o elemento de imagem na segunda página e defina a imagem
+				document.getElementById('profile-pic').src = base64String;
+			}
+		});
 
 		const isLeapYear = (year) => {
 			return (
@@ -287,7 +298,7 @@
 
 			function sair(){
 				localStorage.removeItem('token')
-				window.location.href = "../login/login.html"
+				window.location.href = "../index.html"
 				localStorage.removeItem('userLogado')
 
 		}

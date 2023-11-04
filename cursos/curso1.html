@@ -7,6 +7,8 @@
 
     <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="../sistema/sistema.css">
+
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,8 +35,8 @@
         </ul>
 
         <div class="header-icons">
-            <a href="../sistema/PERFIL.HTML" class="notification">
-				<i class='bx bx-user'></i>
+            <a href="../sistema/PERFIL.html" class="perfil">
+				<img src="../assets/profile.png" alt="Foto de perfil" id="profile-pic">
 			</a>
             <a href="../sistema/VIDEOS.html"><i class='bx bxl-youtube'></i></a>
             <div class="bx bx-menu" id="menu-icon"></div>
@@ -154,6 +156,18 @@
     <!-- CUSTOM JS LINKS -->
     <script type="text/javascript" src="../js/script.js"></script>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+			// Recupere a imagem base64 do localStorage
+			const base64String = localStorage.getItem('profilePicBase64');
+			
+			// Verifique se a imagem existe no localStorage
+			if (base64String) {
+				// Encontre o elemento de imagem na segunda página e defina a imagem
+				document.getElementById('profile-pic').src = base64String;
+			}
+		});
+    </script>
 
 </body>
 </html>

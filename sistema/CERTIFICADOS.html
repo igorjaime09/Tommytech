@@ -91,8 +91,8 @@
 					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
 				</div>
 			</form>
-			<a href="PERFIL.HTML" class="notification">
-				<i class='bx bx-user'></i>
+			<a href="PERFIL.HTML" class="perfil">
+				<img src="../assets/profile.png" alt="Foto de perfil" id="profile-pic">
 			</a>
 			<a href="#" class="notification">
 				<i class='bx bxs-bell' ></i>
@@ -112,7 +112,7 @@
 						</li>
 						<li><i class='bx bx-chevron-right' ></i></li>
 						<li>
-							<a class="active" href="CURSOS.html">Certificados</a>
+							<a class="active" href="CERTIFICADOS.html">Certificados</a>
 						</li>
 					</ul>
 				</div>
@@ -249,7 +249,7 @@
 
 			function sair(){
 				localStorage.removeItem('token')
-				window.location.href = "../login/login.html"
+				window.location.href = "../index.html"
 				localStorage.removeItem('userLogado')
 
 		}

@@ -989,6 +989,75 @@ body {
     animation: showtime 1s forwards;
   }
 
+  /* PERFIL */
+
+  #content main .foto{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	grid-gap: 24px;
+	margin-top: 36px;
+  }
+
+  #content main .foto li{
+	padding: 24px;
+	display: flex;
+	align-items: center;
+	grid-gap: 24px;
+  }
+
+  .hero{
+	width: 100%;
+	height: 50vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+
+  .card{
+	width: 400px;
+	padding: 40px;
+	text-align: center;
+	color: #333;
+	background: #fff;
+	border-radius: 15px;
+  }
+
+  .card h1{
+	font-weight: 500;
+	color: #1f1c1c;
+  }
+
+  .card img{
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	aspect-ratio: 1/1;
+	object-fit: cover;
+  }
+
+  .up_img{
+	display: block;
+	width: 200px;
+	background: var(--main-color);
+	color: #fff;
+	padding: 12px;
+	margin: 10px auto;
+	border-radius: 15px;
+	cursor: pointer;
+  }
+  #input-file{
+	display: none;
+  }
+
+  .perfil img{
+	position: relative;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	object-fit: cover;
+  }
 
 
   
@@ -1043,27 +1112,7 @@ body {
     }
   }
   @media (max-width: 576px) {
-    .month-list>div{
-  
-      margin: 5px 0px
-    }
-
-	.date-time-value{
-		display: none;
-
-	}
-
-	.day-text-formate {
-		display: none;
-	}
-
-	.calendar{
-		height: 75vh;
-	}
-
-	.calendar-days{
-		height: 35vh;
-	}
+    
   }
 
 
@@ -1097,12 +1146,6 @@ body {
 	#content main .certificate li .btn-download{
 		width: 50vw;
 	}
-
-}
-
-@media screen and (max-width: 860px){
-
-	
 
 }
 
@@ -1166,6 +1209,13 @@ body {
 		background: var(--red);
 	}
 
+	#content nav .profile img {
+		width: 36px;
+		height: 36px;
+		object-fit: cover;
+		border-radius: 50%;
+	}
+
 	#content nav form.show ~ .notification,
 	#content nav form.show ~ .profile {
 		display: none;
@@ -1218,10 +1268,29 @@ body {
 	#content main .certificate li .titulo img{
 		margin: auto;
 	}
+
+	.month-list>div{
+  
+	margin: 5px 0px
+	}
+
+	.date-time-value{
+		left: -10px;
+	}
+
+	.day-text-formate {
+		bottom: 6rem;
+	}
 }
 
 @media screen and (max-width: 360px){
 	.container .video-list-container .list .comentar .comentario{
 		width: 120px;
+	}
+}
+
+@media (max-width: 320px){
+	.date-time-value{
+		left: -40px;
 	}
 }
