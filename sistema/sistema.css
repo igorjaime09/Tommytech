@@ -74,7 +74,7 @@ body {
 	height: 100%;
 	background: #066B44;
 	z-index: 2000;
-	font-family: var(--lato);
+	font-family: var(--poppins);
 	transition: .3s ease;
 	overflow-x: hidden;
 	scrollbar-width: none;
@@ -200,7 +200,7 @@ body {
 	display: flex;
 	align-items: center;
 	grid-gap: 24px;
-	font-family: var(--lato);
+	font-family: var(--poppins);
 	position: sticky;
 	top: 0;
 	left: 0;
@@ -251,6 +251,7 @@ body {
 	outline: none;
 	width: 100%;
 	color: var(--dark);
+	font-family: var(--poppins);
 }
 #content nav form .form-input button {
 	width: 36px;
