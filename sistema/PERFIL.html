@@ -111,6 +111,9 @@
 							<a href="sistema.html">Início</a>
 						</li>
 						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="PERFIL.html">Meu Perfil</a>
+						</li>
 					</ul>
 				</div>
 				<a href="VIDEOS.html" class="btn-download">
@@ -119,110 +122,40 @@
 				</a>
 			</div>
 
-			<ul class="foto">
+			<ul class="foto-perfil">
 				<li>
 					<div class="hero">
-						<div class="card">
-							<h1 id="logado"></h1>
-							<p id="email"></p>
-							<img src="../assets/profile.png" alt="Foto de perfil" id="profile-pic">
-							<label for="input-file" class="up_img" id="reload-button">Carregar imagem</label>
-							<input type="file" accept="image/*" id="input-file" onchange="converterImagem()">
+						<div class="usuario">
+							<div class="card">
+								<h1 id="logado"></h1>
+								<p id="nome"></p>
+								<img src="../assets/profile.png" alt="Foto de perfil" id="profile-pic">
+								<label for="input-file" class="up_img" id="reload-button">Carregar imagem</label>
+								<input type="file" accept="image/*" id="input-file" onchange="converterImagem()">
+							</div>
+						</div>
+						<div class="info">
+							<h1>Meu perfil</h1>
+							<p>Visualize e edite suas informações pessoais abaixo.</p>
+							<div class="email">
+								<h4>Email de login:</h4>
+								<p id="email"></p>
+							</div>
+							<div class="mudar__nome">
+								<h1>Alterar Nome</h1>
+								<input type="text" id="novo-nome" placeholder="Digite o novo nome">
+    							<button id="salvar">Mudar nome</button>
+							</div>
+							<div class="mudar__senha">
+								<h1>Alterar Senha</h1>
+								<input type="text" id="novo-nome" placeholder="Digite a nova senha">
+    							<button id="salvar">Mudar senha</button>
+							</div>
 						</div>
 					</div>
 				</li>
 			</ul>
 
-
-			<div class="table-data">
-				<div class="order">
-					<div class="head">
-						<h3>Meus cursos</h3>
-						<i class='bx bx-search' ></i>
-						<i class='bx bx-filter' ></i>
-					</div>
-					<table>
-						<thead>
-							<tr>
-								<th>Curso</th>
-								<th>Data de início</th>
-								<th>Status</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<img src="../assets/curso1.png">
-									<p>HTML e CSS</p>
-								</td>
-								<td>24-06-2023</td>
-								<td><span class="status completed">Finalizado</span></td>
-							</tr>
-							<tr>
-								<td>
-									<img src="../assets/curso6.png">
-									<p>Javascript básico</p>
-								</td>
-								<td>01-10-2023</td>
-								<td><span class="status pending">Pendente</span></td>
-							</tr>
-							<tr>
-								<td>
-									<img src="../assets/curso3.png">
-									<p>PHP básico</p>
-								</td>
-								<td>12-09-2023</td>
-								<td><span class="status pending">Pendente</span></td>
-							</tr>
-							<tr>
-								<td>
-									<img src="../assets/curso4.png">
-									<p>Arq. de computadores</p>
-								</td>
-								<td>06-09-2023</td>
-								<td><span class="status pending">Pendente</span></td>
-							</tr>
-							<tr>
-								<td>
-									<img src="../assets/curso5.png">
-									<p>Informática básica</p>
-								</td>
-								<td>10-04-2023</td>
-								<td><span class="status completed">Finalizado</span></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<div class="todo">
-					<div class="head">
-						<h3>Lista de metas</h3>
-						<i class='bx bx-plus' ></i>
-						<i class='bx bx-filter' ></i>
-					</div>
-					<ul class="todo-list">
-						<li class="completed">
-							<p>Crie sua meta aqui</p>
-							<i class='bx bx-dots-vertical-rounded' ></i>
-						</li>
-						<li class="completed">
-							<p>Crie sua meta aqui</p>
-							<i class='bx bx-dots-vertical-rounded' ></i>
-						</li>
-						<li class="not-completed">
-							<p>Crie sua meta aqui</p>
-							<i class='bx bx-dots-vertical-rounded' ></i>
-						</li>
-						<li class="completed">
-							<p>Crie sua meta aqui</p>
-							<i class='bx bx-dots-vertical-rounded' ></i>
-						</li>
-						<li class="not-completed">
-							<p>Crie sua meta aqui</p>
-							<i class='bx bx-dots-vertical-rounded' ></i>
-						</li>
-					</ul>
-				</div>
-			</div>
 		</main>
 		<!-- MAIN -->
 	</section>
@@ -237,6 +170,8 @@
 
 
 	<script>
+		
+
 		
 
 
@@ -257,6 +192,11 @@
 			let email = document.querySelector('#email')
 
 			email.innerHTML = `${userLogado.email }`
+			
+			let nomeLogado = JSON.parse(localStorage.getItem('userLogado'))
+			let nome = document.querySelector('#nome')
+			
+			nome.innerHTML = `${'@' + userLogado.nome }`
 
 
 			function sair(){
@@ -265,6 +205,8 @@
 				localStorage.removeItem('userLogado')
 
 		}
+
+		
 
 		
 

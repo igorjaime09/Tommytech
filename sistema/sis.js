@@ -1,5 +1,3 @@
-
-
 const allSideMenu = document.querySelectorAll('#sidebar .side-menu.top li a');
 
 allSideMenu.forEach(item=> {
@@ -65,6 +63,10 @@ window.addEventListener('resize', function () {
 	}
 })
 
+
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
 	// Recupere a imagem base64 do localStorage
 	const base64String = localStorage.getItem('profilePicBase64');
@@ -86,7 +88,6 @@ let inputFile = document.getElementById('input-file');
 			const base64String = reader.result;
 			// Salvar a imagem base64 no localStorage
 			localStorage.setItem('profilePicBase64', base64String);
-
 
 			document.getElementById('profile-pic').src = base64String;
 		};
@@ -122,7 +123,7 @@ let inputFile = document.getElementById('input-file');
 
 	profilePic.src = base64String;
 	} else {
-	
+
 
 	profilePic.src = '../assets/profile.png';
 	}
@@ -137,10 +138,13 @@ let inputFile = document.getElementById('input-file');
 
 	profilePic2.src = base64StringCopy;
 	} else {
-	
+
 
 	profilePic2.src = '../assets/profile.png';
 	}
+
+
+
 
 	
 

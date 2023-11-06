@@ -198,6 +198,4 @@ document.getElementById('meuFormulario').addEventListener('submit', function(eve
     usuario.focus()
   }
 
-  
-  
 }); 
