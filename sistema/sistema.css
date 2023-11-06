@@ -1000,15 +1000,19 @@ body {
 
   #content main .foto-perfil li{
 	padding: 24px;
-	background: #fff;
+	background-color: #fff;
+	background: url(../assets/perfil.svg);
 	border-radius: 20px;
+	background-size: cover;
 	display: flex;
 	align-items: center;
 	grid-gap: 24px;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
   }
 
   .info{
 	margin-bottom: auto;
+	margin-left: 130px;
   }
 
   .email {
@@ -1028,7 +1032,7 @@ body {
   .card{
 	padding: 40px;
 	text-align: center;
-	color: #333;
+	color: #ffffff;
 	border-radius: 15px;
   }
 
@@ -1053,7 +1057,7 @@ body {
 	display: block;
 	width: 200px;
 	background: var(--main-color);
-	color: #fff;
+	color: #ffffff;
 	padding: 12px;
 	margin: 10px auto;
 	border-radius: 15px;
@@ -1082,7 +1086,7 @@ body {
   }
 
 
-  #novo-nome{
+  .novo-nome{
 	flex-grow: 1;
 	padding: 0 16px;
 	height: 30px;
@@ -1193,6 +1197,10 @@ body {
 		width: 50vw;
 	}
 
+	.info{
+		margin-left: 80px;
+	  }
+
 }
 
 @media screen and (max-width: 845px){
@@ -1230,7 +1238,13 @@ body {
 	}
 
 	.info{
-		padding: 15px;
+		padding: 20px;
+		margin-left: 0px;
+	}
+
+	.up_img{
+		background: #2c8161;
+		box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 	}
 
 
@@ -1347,6 +1361,13 @@ body {
 	#salvar{
 		width: 40vw;
 	}
+
+	.info{
+		padding: 25px;
+		margin-left: 0px;
+	}
+
+	
 
 	
 
