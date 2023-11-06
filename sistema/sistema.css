@@ -1087,18 +1087,16 @@ body {
 
 
   .novo-nome{
-	flex-grow: 1;
 	padding: 0 16px;
 	height: 30px;
 	border: none;
 	background: var(--grey);
 	border-radius: 36px;
-	color: var(--dark);
 	font: var(--poppins);
   }
 
 
-  #salvar{
+  .salvar{
 	height: 36px;
 	width: 20vw;
 	padding: 0 16px;
@@ -1173,7 +1171,7 @@ body {
 		width: 25vw;
 	}
 
-	#salvar{
+	.salvar{
 		width: 25vw;
 	}
 
@@ -1204,7 +1202,7 @@ body {
 }
 
 @media screen and (max-width: 845px){
-	#salvar{
+	.salvar{
 		margin-top: 10px;
 	}
 }
@@ -1358,13 +1356,17 @@ body {
 		bottom: 9rem;
 	}
 
-	#salvar{
+	.salvar{
 		width: 40vw;
 	}
 
 	.info{
 		padding: 25px;
 		margin-left: 0px;
+	}
+
+	.novo-nome{
+		width: 190px;
 	}
 
 	
