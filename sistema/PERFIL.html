@@ -8,10 +8,11 @@
     <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="sistema.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.9.0/dist/sweetalert2.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.9.0/dist/sweetalert2.all.min.js"></script>
     <script src="https://kit.fontawesome.com/28d256e67b.js" crossorigin="anonymous"></script>
 
 </head>
@@ -116,10 +117,6 @@
 						</li>
 					</ul>
 				</div>
-				<a href="VIDEOS.html" class="btn-download">
-					<i class='bx bxl-youtube'></i>
-					<span class="text">Ver vídeos da semana</span>
-				</a>
 			</div>
 
 			<ul class="foto-perfil">
@@ -150,6 +147,10 @@
 								<h1>Alterar Senha</h1>
 								<input type="text" class="novo-nome" placeholder="Digite a nova senha">
     							<button class="salvar">Mudar senha</button>
+							</div>
+							<div class="delet">
+								<button class="delet__profile" onclick="delet()"><i class='bx bx-trash-alt'></i>
+									<span class="text">Deletar perfil</span></button>
 							</div>
 						</div>
 					</div>
@@ -203,9 +204,49 @@
 				localStorage.removeItem('token')
 				window.location.href = "../index.html"
 				localStorage.removeItem('userLogado')
+			}
 
-		}
+			function delet(){
 
+				const swalWithBootstrapButtons = Swal.mixin({
+				customClass: {
+					confirmButton: "btn btn-success",
+					cancelButton: "btn btn-danger"
+				},
+				buttonsStyling: false
+				});
+				Swal.fire({
+				title: "Você tem certeza?",
+				text: "Isso não poderá ser revertido!",
+				icon: "warning",
+				showCancelButton: true,
+				confirmButtonText: "Sim, deletar perfil!",
+				cancelButtonText: "Não, cancelar!",
+				reverseButtons: true
+				}).then((result) => {
+				if (result.isConfirmed) {
+					Swal.fire({
+					title: "Perfil deletado!",
+					text: "Perfil deletado com sucesso.",
+					icon: "success"
+					});
+					localStorage.clear()
+					
+					setTimeout(()=>{
+					window.location.href = "../index.html"
+					}, 2000)
+				} else if (
+					/* Read more about handling dismissals below */
+					result.dismiss === Swal.DismissReason.cancel
+				) {
+					Swal.fire({
+					title: "Ação cancelada",
+					text: "Seu perfil continua salvo :)",
+					icon: "error"
+					});
+				}
+				});
+			}
 		
 
 		

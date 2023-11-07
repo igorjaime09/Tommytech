@@ -86,7 +86,6 @@ let inputFile = document.getElementById('input-file');
 
 		reader.onload = function() {
 			const base64String = reader.result;
-			// Salvar a imagem base64 no localStorage
 			localStorage.setItem('profilePicBase64', base64String);
 
 			document.getElementById('profile-pic').src = base64String;

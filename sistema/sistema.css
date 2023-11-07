@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -1098,7 +1099,7 @@ body {
 
   .salvar{
 	height: 36px;
-	width: 20vw;
+	width: 10vw;
 	padding: 0 16px;
 	border-radius: 16px;
 	background: var(--main-color);
@@ -1106,6 +1107,22 @@ body {
 	border: none;
 	font-weight: 500;
 	font: var(--poppins);
+	cursor: pointer;
+  }
+
+
+  .delet__profile{
+	height: 36px;
+	width: 20vw;
+	padding: 0 16px;
+	border-radius: 16px;
+	background: var(--red);
+	color: var(--light);
+	border: none;
+	font-weight: 500;
+	font-family: var(--poppins);
+	cursor: pointer;
+	margin-top: 90px;
   }
 
   
@@ -1175,6 +1192,10 @@ body {
 		width: 25vw;
 	}
 
+	.delet__profile{
+		width: 25vw;
+	}
+
 	
 }
 
@@ -1204,6 +1225,10 @@ body {
 @media screen and (max-width: 845px){
 	.salvar{
 		margin-top: 10px;
+	}
+
+	.delet__profile{
+		margin-top: 25px;
 	}
 }
 
@@ -1357,6 +1382,10 @@ body {
 	}
 
 	.salvar{
+		width: 40vw;
+	}
+
+	.delet__profile{
 		width: 40vw;
 	}
 
